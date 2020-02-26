@@ -6,9 +6,9 @@ The repository also contains scripts that we used to automate experiments. <br/>
 ## Directory structure
 
 /peso\_workspace/measure_\* - Micro benchmark to measure inter-core communication latency <br/> 
-/peso\_workspace/peso - Peso source code and benchmarks <br/>
-/scripts - scripts to automate experiments <br/>
-/scripts/rt.db - SQLite DB with collected data <br/>
+/peso\_workspace/peso       - Peso source code and benchmarks <br/>
+/scripts                    - Scripts to automate experiments <br/>
+/scripts/rt.db              - SQLite DB with collected data <br/>
 
 We used the XMOS xTIMEcomposer to edit and compile the code in /peso\_workspace. The xTIMEcomposer is available on xmos.com.
 
