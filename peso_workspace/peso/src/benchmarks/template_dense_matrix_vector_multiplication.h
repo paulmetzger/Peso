@@ -2,7 +2,7 @@
  * reduction.h
  *
  *  Created on: 18 May 2018
- *      Author: picard
+ *      Author: Paul Metzger
  */
 
 

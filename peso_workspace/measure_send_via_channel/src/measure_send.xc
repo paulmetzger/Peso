@@ -2,7 +2,7 @@
  * measure_channel_operations.xc
  *
  *  Created on: 8 Jun 2018
- *      Author: picard
+ *      Author: Paul Metzger
  */
 
 #include <stdio.h>

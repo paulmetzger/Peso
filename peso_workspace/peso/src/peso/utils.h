@@ -2,7 +2,7 @@
  * utils.h
  *
  *  Created on: 11 May 2018
- *      Author: picard
+ *      Author: Paul Metzger
  */
 
 

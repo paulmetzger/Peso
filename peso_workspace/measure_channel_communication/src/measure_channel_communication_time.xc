@@ -5,7 +5,7 @@
  * Max. measured latency 130ns. (24/05/2019)
  *
  *  Created on: 18 May 2018
- *      Author: picard
+ *      Author: Paul Metzger
  */
 
 #include <stdio.h>
