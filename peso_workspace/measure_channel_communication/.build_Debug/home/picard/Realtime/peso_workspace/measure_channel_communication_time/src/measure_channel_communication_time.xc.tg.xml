@@ -1,0 +1,54 @@
+<taskgraph>
+<task>
+  <name>delay_seconds</name>
+  <inFunction>delay_seconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_milliseconds</name>
+  <inFunction>delay_milliseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>delay_microseconds</name>
+  <inFunction>delay_microseconds</inFunction>
+  <calledFunction>delay_ticks_longlong</calledFunction>
+</task>
+<task>
+  <name>producer</name>
+  <inFunction>producer</inFunction>
+</task>
+<task>
+  <name>consumer</name>
+  <inFunction>consumer</inFunction>
+</task>
+<task>
+  <name>main</name>
+  <inFunction>main</inFunction>
+</task>
+<task>
+  <name>_task_producer_0</name>
+  <inFunction>main</inFunction>
+  <parent>main</parent>
+  <calledFunction>producer</calledFunction>
+  <tile>tile[0]</tile>
+  <core>u0</core>
+  <inPar/>
+</task>
+<task>
+  <name>_task_consumer_1</name>
+  <inFunction>main</inFunction>
+  <parent>main</parent>
+  <calledFunction>consumer</calledFunction>
+  <tile>tile[0]</tile>
+  <core>u1</core>
+  <inPar/>
+</task>
+<connection>
+  <ends>
+    <end task="_task_producer_0" type="chan"/>
+    <end task="_task_consumer_1" type="chan"/>
+  </ends>
+  <name>p_to_c</name>
+</connection>
+</taskgraph>

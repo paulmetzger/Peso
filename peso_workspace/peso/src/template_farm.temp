@@ -1,0 +1,20 @@
+/*
+ * farm.xc
+ *
+ *  Created on: 2 May 2018
+ *      Author: Paul Metzger
+ */
+
+#include "benchmarks/%DIR%%APP_NAME%.h"
+//#include "benchmarks/sparse_matrix_vector_multiplication.h"
+//#include "benchmarks/dense_matrix_vector_multiplication.h"
+//#include "benchmarks/reduction.h"
+//#include "syntax_analysis/isolated_dense_matrix_vector_multiplication.h"
+//#include "syntax_analysis/isolated_reduction.h"
+
+int main() {
+    return %APP_NAME%_benchmark();
+    //return sparse_matrix_vector_multiplication_benchmark();
+    //return dense_matrix_vector_multiplication_benchmark();
+    //return reduction_benchmark();
+}

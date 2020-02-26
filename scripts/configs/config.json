@@ -1,0 +1,127 @@
+{
+  "max_throughput_heatmap": {
+    "application_name" : "reduction",
+    "input_array_size" : [30],
+    "worker_wcet"      : [1520],
+    "relative_deadline": 15000,
+    "max_workers"      : 6,
+    "samples"          : 5,
+    "data_types"       : ["short"]
+  },
+  "dop_model_accuracy" : {
+    "sparse_matrix_vector_multiplication": {
+      "relative_deadline": [10000, 100000],
+      "input_array_size" : [10, 15],
+      "worker_wcet"      : [2910, 6870],
+      "period_start"     : [1000, 3000],
+      "period_end"       : [3000, 5000],
+      "period_steps"     : [1000, 1000],
+      "samples"          : 5
+    },
+    "reduction": {
+      "relative_deadline": [10000, 10000],
+      "input_array_size" : [15, 30],
+      "worker_wcet"      : [830, 1580],
+      "period_start"     : [500, 500],
+      "period_end"       : [1000, 1000],
+      "period_steps"     : [250, 250],
+      "samples"          : 5
+    },
+    "dense_matrix_vector_multiplication": {
+      "relative_deadline": [10000, 100000],
+      "input_array_size" : [5, 10],
+      "worker_wcet"      : [1260, 8060],
+      "period_start"     : [500, 3500],
+      "period_end"       : [1500, 8500],
+      "period_steps"     : [500, 2500],
+      "samples"          : 5
+    }
+  },
+  "batch_size_model_accuracy" : {
+    "sparse_matrix_vector_multiplication": {
+      "relative_deadline": [10000, 100000],
+      "input_array_size" : [10, 15],
+      "worker_wcet"      : [2910, 6870],
+      "period_start"     : [1000, 3000],
+      "period_end"       : [3000, 5000],
+      "period_steps"     : [1000, 1000],
+      "samples"          : 5
+    },
+    "reduction": {
+      "relative_deadline": [10000, 10000],
+      "input_array_size" : [15, 30],
+      "worker_wcet"      : [830, 1580],
+      "period_start"     : [500, 500],
+      "period_end"       : [1000, 1000],
+      "period_steps"     : [250, 250],
+      "samples"          : 5
+    },
+    "dense_matrix_vector_multiplication": {
+      "relative_deadline": [10000, 100000],
+      "input_array_size" : [5, 10],
+      "worker_wcet"      : [1260, 8060],
+      "period_start"     : [500, 3500],
+      "period_end"       : [1500, 8500],
+      "period_steps"     : [500, 2500],
+      "samples"          : 5
+    }
+  },
+  "throughput": {
+    "sparse_matrix_vector_multiplication": {
+      "relative_deadline_start": 10000,
+      "relative_deadline_steps": 500,
+      "relative_deadline_stop" : 10000,
+      "input_array_size"       : [10, 15],
+      "batch_sizes"            : [[2, 5, 8], [3, 4, 5]],
+      "wcet"                   : [2910, 6870],
+      "workers_start"          : 6,
+      "workers_steps"          : 1,
+      "workers_stop"           : 6,
+      "samples"                : 5
+    },
+    "reduction": {
+      "relative_deadline_start": 10000,
+      "relative_deadline_steps": 500,
+      "relative_deadline_stop" : 10000,
+      "input_array_size"       : [15, 30],
+      "batch_sizes"            : [[3, 6, 9], [3, 4, 5]],
+      "wcet"                   : [830, 1580],
+      "workers_start"          : 6,
+      "workers_steps"          : 1,
+      "workers_stop"           : 6,
+      "samples"                : 5
+    },
+    "dense_matrix_vector_multiplication": {
+      "relative_deadline_start": 100000,
+      "relative_deadline_steps": 500,
+      "relative_deadline_stop" : 100000,
+      "input_array_size"       : [5, 10],
+      "batch_sizes"            : [[5, 10, 15], [3, 5, 7]],
+      "wcet"                   : [1260, 8060],
+      "workers_start"          : 6,
+      "workers_steps"          : 1,
+      "workers_stop"           : 6,
+      "samples"                : 5
+    }
+  },
+  "throughput_with_hand_implementations": {
+    "sparse_matrix_vector_multiplication": {
+      "relative_deadlines": [10000, 100000],
+      "input_array_sizes": [10, 15],
+      "wcets": [2910, 6870],
+      "samples": 5
+    },
+    "reduction": {
+      "relative_deadlines": [10000, 10000],
+      "input_array_sizes": [15, 30],
+      "wcets": [830, 1580],
+      "samples": 5
+    },
+    "dense_matrix_vector_multiplication": {
+      "relative_deadlines": [10000, 100000],
+      "input_array_sizes": [5, 10],
+      "wcets": [1260, 8060],
+      "samples": 5
+    }
+  }
+}
